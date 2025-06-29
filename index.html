@@ -1,24 +1,301 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Misión 3 : El Catálogo Infinito</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Misión 3 : El Catálogo Infinito</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Misión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes utilicen eficientemente la librería de assets de Delightex.</li>
+                                        <li>Que desarrollen la habilidad de planificar una escena antes de construirla.</li>
+                                        <li>Que utilicen un LLM (Xolo) como asistente de producción para identificar componentes clave de una escena.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Activación y contexto de la misión.</li>
+                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Presentación del Desafío:</strong> Introducción al concepto de 'Studio Session' y planificación.</li>
+                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Dominio del tutorial de la librería y entendimiento del rol del LLM como asistente de producción.</li>
+                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Planificación de una escena en equipo con Xolo y construcción inicial.</li>
+                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Retroalimentación estructurada entre pares sobre los planes de escena.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un plan de escena, definido como una lista de 5 assets prioritarios generada en colaboración con Xolo.</li>
+                                        <li>Una composición básica inicial ensamblada en Delightex basada en dicho plan.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Acceso a la plataforma Delightex para cada estudiante.</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-11).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Asegurar que el tutorial '4- The Delightex Library' esté disponible y funcional.</li>
+                                                <li>Verificar el correcto funcionamiento de Xolo como LLM para generar listas de assets.</li>
+                                                <li>Tener la presentación de diapositivas cargada y lista.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Repasar el flujo de la primera 'Studio Session' y el rol de Xolo como asistente de producción.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. y Contexto de Misión ⏰ 3 minutos</h2>
+                <p>Establecer un ambiente de trabajo profesional, contextualizar la misión del día y guiar la activación individualizada de Xolo, el copiloto de IA.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta el cambio de enfoque: de la manipulación a la selección y planificación.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Desarrolladores, ya saben manipular objetos y generar inspiración. Pero un arquitecto no crea cada ladrillo desde cero. Utiliza componentes pre-existentes. Hoy, explorarán la librería de Delightex: un catálogo casi infinito de assets listos para usar. Su habilidad clave será la selección y la planificación. Pasamos del 'cómo se mueve' al 'qué se usa'."</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación de IA y Perfil ⏰ 2 minutos</h3>
+                            <p>El facilitador da la instrucción explícita a los alumnos para que saluden a Xolo en el chat.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Para comenzar, activen su sesión con Xolo. Ya conocen el procedimiento. Usen el chat con la estructura: <strong>'Hola Xolo, soy [Su Nombre], mi perfil es [Su Perfil] y mis intereses son [Sus Intereses]. Listo para la Misión 3.'</strong> Es un paso crucial para continuar."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 7 minutos</h2>
+                <p>Clarificar las metas de aprendizaje y presentar el reto de planificar una escena antes de construirla.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: El Desafío del Día ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador introduce la primera 'Studio Session' y el desafío de la planificación.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Esta es nuestra primera 'Studio Session'. El foco cambia de aprender una habilidad aislada a aplicar las que ya tienen para avanzar en un proyecto. Hoy, el proyecto es construir su primera escena temática. La librería de assets es su mayor recurso, pero su tamaño puede ser abrumador. El reto no es encontrar un objeto, sino planificar qué objetos necesitan para contar una historia visual de manera coherente."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Objetivo de Aprendizaje (I Can Statement) ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje concreto de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Nuestra meta para hoy es clara. Al finalizar la sesión, podrán decir: <strong>'Yo puedo planificar la composición de una escena 3D, seleccionando assets estratégicos de una librería, y usar un LLM como mi asistente de producción para estructurar ese plan.'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM ⏰ 10 minutos</h2>
+                <p>Guiar a los estudiantes en la adquisición de la habilidad técnica y en la comprensión del nuevo rol de Xolo como asistente de producción.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Diálogo Conceptual con Xolo ⏰ 10 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) El facilitador instruye a los estudiantes sobre cómo iniciar su diálogo con Xolo para entender su doble rol.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Iniciamos el A.I. GYM. Antes de entrar al estudio, hay una última habilidad técnica que adquirir. Pregunten a Xolo directamente: <strong>'Xolo, explícame cómo usar la librería de Delightex y luego explícame tu rol como Asistente de Producción.'</strong> Primero, les guiará para completar el tutorial '4- The Delightex Library'. Una vez hecho esto, les explicará cómo puede, como un LLM, tomar la 'vibe' de una escena y generar una lista de assets prioritarios para su construcción. Es crucial que entiendan ambos roles."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 15 minutos</h2>
+                <p>Supervisar el workflow de completar el tutorial, planificar una escena en parejas con Xolo y comenzar la construcción.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Dominio de la Herramienta ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) Los estudiantes completan el tutorial de la librería de assets indicado por Xolo.</p>
+                        </div>
+                        <div class.="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Ahora, al Brain Spark. Tienen 5 minutos para la primera fase: completen el tutorial '4- The Delightex Library'. Es un paso técnico necesario antes de la fase creativa. Comiencen."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Planificación de la Escena ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Los estudiantes, en parejas, dialogan con Xolo para crear un plan de escena.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">"Formen parejas. Discutan y elijan un tema y una atmósfera para una escena, como 'cabaña en bosque nevado' o 'puente de mando de nave espacial'. Una vez que tengan la 'vibe', descríbansela a Xolo y pídanle que actúe como su asistente de producción para generar una lista de 5 assets clave. Este es su plan de construcción."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Construcción Inicial ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 8) Los equipos comienzan a ensamblar su escena basándose en el plan de Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">"Con el plan en mano, su misión final de hoy es comenzar la construcción. Busquen los assets de su lista —o similares— en la librería de Delightex y ensamblen la composición básica de su escena. El objetivo es tener una estructura principal lista. Comiencen."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Moderar una fase de retroalimentación estructurada entre pares sobre la calidad de los planes de escena generados.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Think (Reflexión Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 9) El facilitador guía una breve reflexión individual sobre el plan de assets.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Tiempo. Antes de compartir, reflexión individual. Miren su lista de assets. ¿Cómo contribuyen estos 5 objetos a la 'vibe' que querían crear? ¿Cuál de los 5 es el más importante para contar la historia de su escena?"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Pair (Intercambio en Parejas) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 10) Los estudiantes, en nuevas parejas, comparten sus planes de escena y su razonamiento.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Ahora, busquen un nuevo compañero. Uno presenta su plan: lee el tema, la 'vibe' y la lista de 5 assets. Explica por qué eligió esos objetos. El otro escucha para dar feedback. Luego intercambian."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Share (Retroalimentación Estructurada) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 11) El facilitador provee una estructura para que el feedback sobre la planificación sea efectivo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Para el feedback, usen esta estructura: <strong>1. 'Tu plan comunica bien la vibe porque...' 2. 'El asset que me parece más efectivo es...' 3. 'Una idea para otro asset que podría encajar es...'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Síntesis y Cierre ⏰ 1 minuto</h3>
+                            <p>El facilitador concluye la sesión, enfatizando el valor de la planificación profesional.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Hoy han actuado como verdaderos directores de arte. Han aprendido a traducir una idea abstracta, una 'vibe', en una lista de componentes concretos. Esta planificación es la diferencia entre un aficionado y un profesional. En la próxima sesión, daremos a estos mundos un estilo único con texturas personalizadas. Excelente trabajo."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
