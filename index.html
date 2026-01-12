@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playbook: Sesión 3 - 2do Secundaria</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Playbook-S2-TM3</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <h1><span class="book-icon">📋</span> <strong>Playbook: Sesión 3 - 2do Secundaria</strong></h1>
+        <h1><span class="book-icon">📋</span> <strong>Playbook: Misión 3 - 2do Secundaria</strong></h1>
         <div class="header-widgets">
             <div class="timer-container">
-                <span id="timer">⏱️ 00:00</span>
-                <button id="startStop">Start</button>
-                <button id="reset">Reset</button>
+                <span id="global-timer">⏱️ 40:00</span>
+                <button id="global-start-stop">Start</button>
+                <button id="global-reset">Reset</button>
             </div>
             <div class="theme-toggle">
                 <i class="fas fa-sun"></i>
@@ -28,7 +27,6 @@
             </div>
         </div>
     </header>
-
     <div class="main-container">
         <aside class="activity-list">
             <h2>Actividades</h2>
@@ -40,270 +38,406 @@
                 <li><a href="#activity-4">4</a></li>
                 <li><a href="#activity-5">5</a></li>
             </ul>
-
-            <div class="sidebar-info">
-                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
-                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
-            </div>
         </aside>
-
         <main class="content">
             <div class="progress-bar">
                 <div class="progress"></div>
             </div>
-
-            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
-
+            <!-- ACTIVIDAD 0: DE UN VISTAZO -->
             <div class="activity-card" id="activity-0">
-                <h2><span class="book-icon">📝</span> De un Vistazo: Tu Mundo, Tu Estilo</h2>
-                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
-                <div class="overview-table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
-                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <strong>Objetivos de aprendizaje:</strong>
-                                    <ul>
-                                        <li>Que los estudiantes apliquen <strong>texturas personalizadas</strong> para definir el <strong>estilo visual</strong> de una escena 3D.</li>
-                                        <li>Que comprendan conceptualmente los <strong>Modelos de Difusión</strong> como tecnología de IA para la generación de imágenes y texturas.</li>
-                                        <li>Que practiquen la <strong>ingeniería de prompts</strong> para crear assets visuales de nivel profesional ('<strong>seamless</strong>').</li>
-                                        <li><strong>Objetivo general de la sesión:</strong> Que los estudiantes utilicen una IA generativa para crear y aplicar texturas personalizadas a una escena 3D, comprendiendo los conceptos básicos de los Modelos de Difusión y la ingeniería de prompts para lograr una dirección de arte específica.</li>
-                                    </ul>
-                                    <strong>Secuencia de Clase:</strong>
-                                    <ul>
-                                        <li><strong>Actividad 1:</strong> Saludo de IA y Contexto de Misión (3 min)</li>
-                                        <li><strong>Actividad 2:</strong> "I Can Statement" y Presentación del Desafío (7 min)</li>
-                                        <li><strong>Actividad 3:</strong> A.I. GYM (10 min)</li>
-                                        <li><strong>Actividad 4:</strong> Brain Spark (15 min)</li>
-                                        <li><strong>Actividad 5:</strong> Gnius STORM (5 min)</li>
-                                    </ul>
-                                    <strong>Entregable Clave:</strong>
-                                    <ul>
-                                        <li>Una escena re-texturizada con al menos 3 texturas clave generadas por IA que se alineen con una visión artística.</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <strong>Materiales Específicos:</strong>
-                                    <ul>
-                                        <li>Proyector o pantalla interactiva.</li>
-                                        <li>Presentación de la sesión (11 Diapositivas).</li>
-                                        <li>Conexión a internet estable.</li>
-                                        <li>Acceso a la plataforma Delightex para cada estudiante.</li>
-                                        <li>Acceso a KREA.ai.</li>
-                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
-                                    </ul>
-                                     <h4>Glosario de Términos Clave</h4>
-                                    <ul>
-                                      <li><b>Asset:</b> Objeto digital prefabricado (modelo 3D, textura, sonido).</li>
-                                      <li><b>LLM:</b> Large Language Model, IA conversacional.</li>
-                                      <li><b>Vibe:</b> Atmósfera o sensación de una escena.</li>
-                                      <li><b>Seamless/Tileable:</b> Una textura que se puede repetir sin que se noten las uniones.</li>
-                                    </ul>
-                                    <strong>Preparación Previa para ESTA Sesión:</strong>
-                                    <ol>
-                                        <li><strong>Revisión de Misión (Interna):</strong>
-                                            <ul>
-                                                <li>Asegurar que las escenas de la sesión anterior estén guardadas y accesibles.</li>
-                                                <li>Verificar el correcto funcionamiento de KREA.ai y Delightex.</li>
-                                                <li>Tener la presentación de diapositivas cargada y lista.</li>
-                                            </ul>
-                                        </li>
-                                        <li><strong>Familiarización:</strong> Repasar la analogía de los Modelos de Difusión (ruido a imagen) para poder reforzarla.</li>
-                                    </ol>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <h2><span class="book-icon">📝</span> De un Vistazo: Comando Central</h2>
+                <p class="overview-subtitle">Todo lo que necesitas para preparar y ejecutar esta misión en minutos.</p>
+                
+                <div class="command-section">
+                    <h3>🎯 Objetivo de Aprendizaje</h3>
+                    <div class="objective-box">
+                        <p><strong>Los estudiantes podrán:</strong> usar Delightex para explorar librerías de assets y crear layouts base para planificar escenas con IA y comprender el pensamiento estructurado en el diseño de mundos.</p>
+                    </div>
+                </div>
+                <div class="command-section xolo-prompt">
+                    <h3>🤖 Prompt de Referencia para XOLO (Solo para Maestro)</h3>
+                    <div class="prompt-box">
+                        <div class="prompt-header">
+                            <span class="prompt-label">⚠️ NOTA: XOLO ya conoce el tema de esta misión. Este prompt es SOLO de referencia en caso de emergencia técnica:</span>
+                            <button class="copy-btn" onclick="copyPrompt('main-prompt')">
+                                <i class="fas fa-copy"></i> Copiar
+                            </button>
+                        </div>
+                        <pre id="main-prompt">Explícame por qué aprender a usar una librería de assets es una habilidad clave para diseñar mundos rápido y con calidad. Guíame en cómo explorar la librería con intención: buscar por categoría, filtrar, analizar estilos y elegir lo necesario. Luego, analicemos cómo un LLM puede ayudarte a planificar una escena antes de construirla: describo una idea y el LLM propone assets posibles, como si fuera un “planificador de escena”. Conecta esto con el tutorial '4- The Delightex Library' y ayúdame a identificar cómo planear antes reduce errores y acelera el diseño.</pre>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>⚡ Puntos Esenciales de la Misión</h3>
+                    <div class="essentials-grid">
+                        <div class="essential-card">
+                            <div class="essential-icon">🎓</div>
+                            <h4>Concepto Clave</h4>
+                            <p>Planificación de Escenas: Es como hacer una lista de compras y un dibujo de dónde va cada mueble antes de empezar a decorar tu cuarto, para que todo quepa y se vea bien.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🔧</div>
+                            <h4>Habilidad Técnica</h4>
+                            <p>Usar la librería de objetos digitales para armar la base de un mundo virtual.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🧪</div>
+                            <h4>Experimentación</h4>
+                            <p>Probar con diferentes categorías de objetos y estilos visuales para entender cómo cambia la narrativa de una escena.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">💬</div>
+                            <h4>Interacción con XOLO</h4>
+                            <p>XOLO ya conoce a cada estudiante y el tema de hoy. Solo abren el chat y comienzan a aprender. Tú guías el timing y motivación.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>📦 Checklist de Materiales</h3>
+                    <div class="materials-checklist">
+                        <label><input type="checkbox"> Proyector/pantalla + presentación (5 diapositivas)</label>
+                        <label><input type="checkbox"> Internet estable + Gnius Space con XOLO activo</label>
+                        <label><input type="checkbox"> Computadora o Tablet (1 por cada 2 estudiantes)</label>
+                        <label><input type="checkbox"> Acceso a Delightex (https://edu.delightex.com/Auth)</label>
+                        <label><input type="checkbox"> Guía de referencia de assets en Delightex</label>
+                        <label><input type="checkbox"> ⚠️ Esta misión usa diseño de entornos 3D en Delightex</label>
+                        <label><input type="checkbox"> 📋 Para usar la librería: Abrir el menú de Assets → Explorar categorías → Arrastrar a la escena</label>
+                    </div>
+                    <p class="care-reminder"><strong>🛡️ Cuidado del equipo:</strong> Recuerda: Cuidar tu computadora, no consumir alimentos cerca del equipo y cerrar sesión al terminar.</p>
+                </div>
+                <div class="command-section">
+                    <h3>🗓️ Secuencia de la Misión (40 min)</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot">1</div>
+                            <div class="timeline-content">
+                                <strong>Intro a la Misión</strong>
+                                <span class="time-badge">2 min</span>
+                                <p>Bienvenida, I Can Statement y contexto de la misión.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">2</div>
+                            <div class="timeline-content">
+                                <strong>A.I. Gym</strong>
+                                <span class="time-badge">8 min</span>
+                                <p>Los estudiantes abren el chat con XOLO y aprenden sobre la planificación de mundos virtuales y el uso de librerías (sin prompt específico).</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">3</div>
+                            <div class="timeline-content">
+                                <strong>Brain Spark</strong>
+                                <span class="time-badge">20 min</span>
+                                <p>Idear, construir y experimentar un programa con XOLO.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">4</div>
+                            <div class="timeline-content">
+                                <strong>Gnius STORM - Compartir</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Demostración y reflexión en parejas.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">5</div>
+                            <div class="timeline-content">
+                                <strong>Entrega de Evidencias</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Subir capturas a Gnius Space y finalizar misión.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>🚨 Resolución Rápida de Problemas</h3>
+                    <div class="troubleshooting-list">
+                        <ul>
+                            <li><strong>Si los alumnos no pueden ingresar a Gnius Space:</strong> Activa XOLO SOS en <a href="https://xolo.gnius.club" target="_blank">xolo.gnius.club</a> para continuar la misión sin interrumpir la clase.</li>
+                            <li><strong>Si Delightex no carga:</strong> Verificar la conexión a internet y recargar la página. Asegurarse de estar usando un navegador compatible (Chrome recomendado).</li>
+                            <li><strong>Si no encuentran un asset:</strong> Usar el buscador por palabras clave en inglés o explorar categorías similares en la librería.</li>
+                            <li><strong>Si hay errores en el diseño:</strong> Recordar a los estudiantes que XOLO puede ayudar a depurar. Pídeles que describan el problema a XOLO.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 1: INTRO A LA MISIÓN -->
             <div class="activity-card" id="activity-1">
-                <h2>⚡ Actividad 1: Saludo de IA y Contexto de Misión ⏰ 3 minutos</h2>
-                <p>Establecer un ambiente de trabajo profesional, contextualizar la misión del día y guiar la activación individualizada de Xolo, el copiloto de IA.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Bienvenida y Contexto ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 2) Da la bienvenida y presenta el cambio de enfoque: de la composición de la escena a la definición del estilo.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"Desarrolladores, ya tienen el esqueleto de su mundo. Pero un esqueleto sin piel no tiene carácter. Hoy, le daremos a sus creaciones una <strong>atmósfera</strong> y un <strong>estilo</strong> únicos. Aprenderán a 'vestir' sus mundos con <strong>texturas personalizadas</strong>, convirtiéndose en <strong>directores de arte</strong>. Su habilidad clave será la <strong>dirección creativa</strong> a través de la <strong>IA</strong>."</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>🚀 Actividad 1: Intro a la Misión</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 2:00</span>
+                        <button class="timer-start-btn" data-duration="120">Iniciar</button>
                     </div>
-                      <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Activación de IA y Perfil ⏰ 2 minutos</h3>
-                            <p>(Proyectar Diapositiva 3) Da la instrucción explícita a los alumnos para que saluden a Xolo en el chat.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"Para comenzar, activen su sesión con Xolo. Ya conocen el procedimiento. Usen el chat con la estructura: <strong>'Hola Xolo, soy [Su Nombre], mi perfil es [Su Perfil] y mis intereses son [Sus Intereses]. Listo para la Misión 3.'</strong> Es un paso crucial para continuar."</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Dar la bienvenida con energía.</li>
+                            <li>Pedir a los alumnos que ingresen a Gnius Space.</li>
+                            <li>Proyecta diapositiva 1 con el I Can Statement.</li>
+                            <li>Motiva: "¡Hoy diseñaremos el plano de sus propios universos digitales!".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <ul>
+                            <li>XOLO ya está listo y conoce a cada estudiante.</li>
+                            <li>Sabe que hoy toca aprender sobre Planificación de mundos y gestión de assets.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Escucha la misión del día.</li>
+                            <li>Loguearse en Gnius Space.</li>
+                            <li>Preparación para trabajar en parejas.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 1: I Can Statement</h4>
+                    <div class="slide-content">
+                        <p><strong>🎯 Hoy seré capaz de:</strong></p>
+                        <p class="highlight-text">🤖 A usar librerías de objetos para que sus mundos virtuales cobren vida rápidamente.</p>
+                        <p><strong>Aplicación real:</strong> Los diseñadores de videojuegos en grandes estudios usan librerías de assets para crear escenarios inmensos de forma eficiente.</p>
+                        <p><strong>Tu aliado:</strong> XOLO ya sabe qué vas a aprender hoy. ¡Solo abre el chat y comienza!</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 2: A.I. GYM -->
             <div class="activity-card" id="activity-2">
-                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 7 minutos</h2>
-                <p>Clarificar las metas de aprendizaje y presentar el reto de la dirección de arte a través de la texturización.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: El Desafío del Día ⏰ 4 minutos</h3>
-                            <p>(Proyectar Diapositiva 4) Introduce la primera 'Studio Session' y el desafío de la planificación.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"Esta 'Studio Session' se centra en la <strong>dirección de arte</strong>. La <strong>textura</strong> de un objeto no es un adorno; es <strong>información</strong>. Una pared de metal oxidado cuenta una historia diferente a una de mármol pulido. El reto no es solo aplicar texturas, sino <strong>crearlas</strong>. Aprenderán a dirigir una <strong>IA generativa</strong> para producir exactamente la 'piel' que su mundo necesita."</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>🧠 Actividad 2: A.I. Gym</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 8:00</span>
+                        <button class="timer-start-btn" data-duration="480">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Objetivo de Aprendizaje (I Can Statement) ⏰ 3 minutos</h3>
-                            <p>(Proyectar Diapositiva 5) Presenta el objetivo de aprendizaje concreto de la sesión.</p>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 2.</li>
+                            <li>Indica: "Abran el chat con XOLO y salúdenlo. Él ya sabe qué les va a enseñar hoy."</li>
+                            <li>Circula para asegurar que todos interactúan con XOLO.</li>
+                            <li>Si alguien tiene dudas, recuérdale: "Pregúntale a XOLO, él te puede explicar de otra forma".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Reconoce al estudiante y sus preferencias de aprendizaje.</li>
+                            <li>Explica cómo navegar y filtrar la librería de assets con intención.</li>
+                            <li>Introduce el concepto de planificación previa usando IA como asistente.</li>
+                            <li>Responde dudas sobre los conceptos.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Abrir el chat con XOLO y saludarlo.</li>
+                            <li>Aprender a usar la librería de Delightex para seleccionar objetos eficientemente.</li>
+                            <li>Aprender sobre el pensamiento estructurado al diseñar escenas.</li>
+                            <li>Despejar todas sus dudas preguntando a XOLO.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 2: A.I. GYM</h4>
+                    <div class="slide-content">
+                        <p><strong>💬 Abre el chat con XOLO y salúdalo:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"¡Hola XOLO! Estoy listo para aprender."</pre>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"Nuestra meta para hoy es clara. Al finalizar la sesión, podrán decir: <strong>'Yo puedo aplicar texturas personalizadas para modificar la atmósfera de una escena 3D y puedo explicar conceptualmente cómo funcionan los Modelos de Difusión de IA para generar esas texturas.'</strong>"</p>
-                            </div>
-                        </div>
+                        <p class="highlight-text" style="margin-top: 1rem;">✨ XOLO ya sabe quién eres y qué tema toca hoy. ¡Solo empieza a conversar!</p>
+                        <p class="highlight-text">🎯 Objetivo: Aprender a usar la librería de assets para planificar una escena coherente.</p>
+                    </div>
+                </div>
+                
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">Ahora vamos a aprender algo fundamental en el diseño de mundos: la planificación. Antes de colocar cualquier objeto, necesitamos saber qué queremos lograr. Abran el chat con XOLO y salúdenlo. XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy. No necesitan escribir un prompt especial, solo empiecen a platicar con él. Él les explicará por qué usar una librería de assets es clave para trabajar rápido y con calidad. Pregúntenle todo lo que necesiten sobre cómo elegir los mejores objetos para sus escenas.</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 3: BRAIN SPARK -->
             <div class="activity-card" id="activity-3">
-                <h2>⚡ Actividad 3: IA GYM ⏰ 10 minutos</h2>
-                <p>Guiar a los estudiantes en la adquisición del concepto de Modelos de Difusión y la técnica para crear texturas profesionales.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Diálogo Conceptual con Xolo ⏰ 10 minutos</h3>
-                            <p>(Proyectar Diapositiva 6) Instruye a los estudiantes sobre cómo iniciar su diálogo con Xolo.</p>
+                <div class="activity-header">
+                    <h2>💡 Actividad 3: Brain Spark</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 20:00</span>
+                        <button class="timer-start-btn" data-duration="1200">Iniciar</button>
+                    </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta la diapositiva 3.</li>
+                            <li>Indica: "Pidan a XOLO que los ayude a idear un proyecto. Cuando tengan su lista de assets, pásenla a Delightex y organicen su layout base".</li>
+                            <li>Entrega por parejas los computadoras conforme los alumnos prueben su idea en el chat.</li>
+                            <li>Si hay errores, recuerda: "Pregúntenle a XOLO, él los ayuda a depurar".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Ayuda a desarrollar una idea y un VIBE que aplique una selección estratégica de assets.</li>
+                            <li>Entrega el GCS de la idea del genio.</li>
+                            <li>Resuelve errores de sintaxis o lógica.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Trabajar con XOLO una idea y un VIBE para crear un plan de escena detallado.</li>
+                            <li>Traducir el GCS de XOLO a bloques en MakeCode.</li>
+                            <li>Depurar su programa con XOLO si hay errores.</li>
+                            <li>Organizar los objetos en Delightex y probar la coherencia visual.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 3: Brain Spark</h4>
+                    <div class="slide-content">
+                        <p><strong>1. 💬 Pide a XOLO que te ayude a crear:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"Ayúdame a construir un “plan de escena” para Delightex: quiero una escena específica (ej. oficina futurista, bosque mágico, escuela robótica). Guíame a describirla con detalle (ambiente, objetos clave, función del lugar) y luego dame una lista de al menos 5 assets de la librería que sean esenciales. Después indícame cómo organizarlos en una escena inicial (layout base) para que tenga coherencia visual y narrativa."</pre>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"Iniciamos el IA GYM. Para entender la tecnología que usarán, inicien un diálogo con Xolo. El prompt es: <strong>“Xolo, explícame cómo funcionan los Modelos de Difusión y qué necesito saber para crear una textura profesional con KREA.ai usando Prompt Engineering (por ejemplo: ‘seamless texture, photorealistic, 4k, metal plate’).”</strong> Él les desmitificará el concepto y les dará la guía técnica sobre las texturas '<strong>seamless</strong>'. Este conocimiento es clave."</p>
-                            </div>
-                        </div>
+                        <p style="margin-top: 1.5rem;"><strong>2. 🔬 Experimenta y descubre con tu programa:</strong></p>
+                        <ul>
+                            <li>¿Lograste encontrar todos los objetos que XOLO te sugirió en la librería?</li>
+                            <li>¿Qué pasa si intentas colocar demasiados objetos sin un orden claro en la escena?</li>
+                            <li>¿Funciona igual la escena si cambias el color de fondo vs si dejas el predeterminado?</li>
+                            <li>¿Cómo cambió tu proceso de diseño al usar a XOLO como asistente de planificación en lugar de solo elegir objetos al azar?</li>
+                            <li>¿Por qué crees que tener un plan previo ayuda a que el mundo digital sea más fácil de entender para quien lo visita?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">¡Es hora de crear! Vamos a pasar de la teoría a la acción. El flujo es simple: idear con XOLO, definir el VIBE de su mundo, obtener su lista de assets y luego ir a Delightex para construir su layout base. Por ejemplo, podrían diseñar una oficina futurista con hologramas o un bosque mágico lleno de criaturas místicas. Sigan el plan que armen con XOLO y usen las preguntas de experimentación para mejorar su diseño. Recuerden cuidar sus equipos y, si tienen errores o dudas, pregúntenle a XOLO, él los ayudará a depurar su escena y su organización.</p>
+                    </div>
+                </div>
+                <div class="challenge-prompt">
+                    <h4>🚀 Prompt de Desafío (para quienes terminen rápido)</h4>
+                    <div class="prompt-box">
+                        <p><strong>Si ya experimentaste con todo, pregunta a XOLO:</strong></p>
+                        <p class="challenge-text">"Ya probé con el layout básico. ¿Puedes enseñarme cómo hacer que mi escena tenga una narrativa visual más profunda usando iluminación o efectos ambientales?"</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 4: GNIUS STORM - COMPARTIR -->
             <div class="activity-card" id="activity-4">
-                 <h2>⚡ Actividad 4: Brain Spark ⏰ 15 minutos</h2>
-                <p>Supervisar el workflow de re-texturización de una escena, incluyendo la generación de assets y su aplicación.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Re-texturización de Escena ⏰ 5 minutos</h3>
-                            <p>(Proyectar Diapositiva 7) Los estudiantes abren sus escenas y comienzan a reemplazar texturas.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"Ahora, al Brain Spark. Abran la escena que ensamblaron en la sesión anterior. Su misión es reemplazar las <strong>texturas genéricas</strong> con <strong>texturas personalizadas</strong> generadas por IA que se alineen con su visión. Empiecen por identificar el primer objeto a texturizar."</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>⚡ Actividad 4: Gnius STORM - Compartir y Reflexionar</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Dirección de Arte con IA ⏰ 5 minutos</h3>
-                            <p>(Proyectar Diapositiva 8) Los estudiantes actúan como directores de arte al formular prompts para generar sus texturas.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                 <p class="dialogue assistant">"Ahora, dirijan a la IA. No se limiten a pedir una 'pared de ladrillos'. Sean <strong>directores de arte</strong>: ¿Están oxidados? ¿Limpios? ¿Cubiertos de grafitis de neón? La <strong>especificidad</strong> es la clave. Usen KREA.ai para generar la textura. Si su <strong>prompt</strong> no da el resultado esperado, descríbanle la '<strong>vibe</strong>' a Xolo para que les ayude a formular un <strong>prompt de nivel profesional</strong>."</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Organiza las parejas para compartir.</li>
+                            <li>Gestiona los tiempos: 2 min demo + 2 min reflexión + 1 min cierre.</li>
+                            <li>Facilita retroalimentación constructiva.</li>
+                            <li>Cierra con reflexión sobre aplicaciones reales.</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Aplicación y Evaluación ⏰ 5 minutos</h3>
-                            <p>(Proyectar Diapositiva 9) Los equipos aplican las nuevas texturas en Delightex y evalúan el cambio en la atmósfera.</p>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⏸️ XOLO EN ESPERA</p>
+                        <ul>
+                            <li>Disponible solo si hay dudas finales urgentes.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Demuestra su programa funcionando a otra pareja.</li>
+                            <li>Explica qué elementos de su librería eligió y por qué combinan bien.</li>
+                            <li>Comparte un descubrimiento interesante.</li>
+                            <li>Da retroalimentación positiva al compañero.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 4: Think-Pair-Share</h4>
+                    <div class="slide-content tps-structure">
+                        <div class="tps-phase">
+                            <h4>🤔 THINK (30 seg)</h4>
+                            <p>Reflexión individual: ¿Qué objetos de la librería funcionaron mejor en tu escena? ¿Qué te sorprendió del plan que te dio XOLO?</p>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                 <p class="dialogue assistant">"Una vez generadas al menos tres texturas clave, aplíquenlas a los objetos correspondientes en su escena de Delightex. Observen críticamente: ¿cómo ha cambiado la <strong>atmósfera</strong>? ¿La nueva textura cuenta la historia que querían? Evalúen el resultado."</p>
-                            </div>
+                        <div class="tps-phase">
+                            <h4>👥 PAIR (2 min)</h4>
+                            <p>Con otra pareja: Demuestren su programa y expliquen su experiencia</p>
+                            <p class="highlight-text">Frase guía: "Mi escena usa objetos de la categoría futurista. Me sorprendió que planear antes hiciera todo más rápido."</p>
+                        </div>
+                        <div class="tps-phase">
+                            <h4>💬 SHARE (2 min)</h4>
+                            <p>Retroalimentación mutua y cierre del maestro.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 5: ENTREGA DE EVIDENCIAS -->
             <div class="activity-card" id="activity-5">
-                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
-                <p>Moderar una fase de retroalimentación estructurada entre pares sobre el impacto narrativo de las texturas.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Think (Reflexión Individual) ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 10) Guía una breve reflexión individual sobre el cambio más impactante.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"Tiempo. Reflexión individual. Preparen una comparación 'antes y después' de su escena. Identifiquen la <strong>textura</strong> que causó el cambio más drástico en la historia o el sentimiento del lugar. ¿Por qué creen que fue tan impactante?"</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>✅ Actividad 5: Entrega de Evidencias</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Pair (Intercambio en Parejas) ⏰ 2 minutos</h3>
-                            <p>(Proyectar Diapositiva 11) En parejas, los estudiantes presentan su 'antes y después', explicando su decisión de texturización.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"En parejas, presenten su 'antes y después'. Muestren la escena original y la <strong>re-texturizada</strong>. Expliquen la decisión detrás de la textura más impactante y cómo cambió la <strong>narrativa</strong> de la escena."</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 5 con las instrucciones.</li>
+                            <li>Guía a los estudiantes para tomar las capturas.</li>
+                            <li>Asegura que todos suban sus evidencias a Gnius Space.</li>
+                            <li>Felicita al grupo por completar la misión.</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Share (Retroalimentación Estructurada) ⏰ 1 minuto</h3>
-                            <p>Provee una estructura para que el feedback sobre el impacto atmosférico sea efectivo.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"Para dar feedback, usen esta estructura: <strong>1. 'El cambio de atmósfera es evidente con la textura de...' 2. 'Esa textura me hace sentir...' 3. 'Una pregunta que tengo sobre tu prompt es...'</strong>"</p>
-                            </div>
-                        </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⭕ XOLO FINALIZADO</p>
+                        <ul>
+                            <li>La interacción con XOLO ha terminado para esta misión.</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 4: Síntesis y Cierre ⏰ 1 minuto</h3>
-                            <p>Concluye la sesión, enfatizando el valor de la dirección de arte.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"Hoy han aprendido que la superficie de las cosas define su carácter. No solo han usado una herramienta, han dirigido un proceso creativo complejo para materializar una visión. En la próxima sesión, nos adentraremos en el <strong>Laboratorio de Texturas</strong> para prácticas avanzadas. Excelente trabajo."</p>
-                            </div>
-                        </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Tomar screenshot de su código en MakeCode.</li>
+                            <li>Tomar screenshot de su conversación con XOLO.</li>
+                            <li>Subir ambas evidencias a Gnius Space.</li>
+                            <li>Dar click en "Finalizar Misión".</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 5: ¡Misión Cumplida!</h4>
+                    <div class="slide-content">
+                        <p><strong>📸 Para terminar, sube tus evidencias a Gnius Space:</strong></p>
+                        <ol>
+                            <li>Una captura de pantalla de tu programa final en <strong>MakeCode</strong>.</li>
+                            <li>Una captura de pantalla de tu conversación con <strong>XOLO</strong> donde te dio tu GCS.</li>
+                        </ol>
+                        <p class="highlight-text" style="margin-top: 1rem;">¡No olvides dar click en el botón <strong>"Finalizar Misión"</strong> cuando termines!</p>
                     </div>
                 </div>
             </div>
         </main>
     </div>
-
     <script src="script.js"></script>
 </body>
-</html>
+</html></html>
